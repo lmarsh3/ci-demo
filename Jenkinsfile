@@ -17,4 +17,8 @@ node {
             sh 'sleep 30'
         }
     }
+    stage('Notify People'){
+        sh "echo Hello people"
+    }
+
 }
