@@ -5,8 +5,7 @@ node {
     }
 
     stage('Testing'){
-        parallel 
-        centos:{
+        parallel centos:{
             node ('centos'){
                 sh 'echo Hello from Centos'
                 sh 'sleep 30'
@@ -18,7 +17,7 @@ node {
         }
     }
     stage('Notify People'){
-        sh "echo Hello people"
+        sh 'echo Hello people'
     }
 
 }
